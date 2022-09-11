@@ -24,11 +24,13 @@ void line()
 void loop() 
 {
   // put your main code here, to run repeatedly:
+  Serial.println("Please enter a name");
   Name = Serial.readString();
   Name.toUpperCase();
   Serial.println(Name);
 
   blink_name(Name);
+ 
 }
 
 void blink_name(String Name) 
@@ -177,4 +179,3 @@ void blink_name(String Name)
     delay(1000);
   }
 }
-
